@@ -52,6 +52,7 @@ header{
     font-size: 35px;
     z-index: 101; /*Para que este sobre el header*/
     cursor: pointer; /*Para que se vea la manito al posarnos*/
+    display: none;
 }
 #menu-toggle{
     display: none; /*Nunca quiero que se vea el checkbox*/
@@ -227,9 +228,8 @@ section{
     .navlist a{
         margin: 7px 0;
         display: block;
-        
     }
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navlist.open{
         right: 0;
     }
 }
